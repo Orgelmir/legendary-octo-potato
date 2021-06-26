@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Competible" content="IE=Edge">
+	<meta name="viewport" content="width=device-witdh, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no">
+	<meta name="robots" content="index, follow, noarchive">
+	<meta name="revisiting-after" content="7 Days">
+	<meta name="rating" content="general">
+	<meta name="copyright" content="copyright &copy; 2020-2020 Bargunya Jf">
+	<meta name="author" content="Hazar Utku Cobanlar - email">
+	<meta name="designer" content="HUC">
+	<meta name="generator" content="Sublime Text 3">
+	<meta name="description" content="Something something or other">
+	<meta name="keywords" content="Something, And, Other,Attempts">
+	<script type="text/javascript" language="javascript" src="Frameworks/jquery-3.5.1.js"></script>
+	<link type="text/css" rel="stylesheet" href="Ayarlar/stil.css">
+	<link rel="stylesheet" href="Ayarlar/w3.css">
+	<title>Keltoş Odun ve Oymacılık</title>
+	<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+	</script>
+	<style>
+		body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+  color:red;
+}
+	</style>
+</head>
+<body >
+		<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;background-color: black" id="mySidebar">
+		  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"></a>
+		  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+		  <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
+		  <a class="w3-bar-item w3-button" href="#">Link 1</a>
+		  <a class="w3-bar-item w3-button" href="#">Link 2</a>
+		  <a class="w3-bar-item w3-button" href="#">Link 3</a>
+		  <a class="w3-bar-item w3-button" href="#">Link 4</a>
+		  <a class="w3-bar-item w3-button" href="#">Link 5</a>
+	 <div>
+    <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div id="demo" class="w3-hide">
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+    </div>
+  </div>
+  <div>Grgwgw</div>
+</nav>
+
+
+</body>
+</html>

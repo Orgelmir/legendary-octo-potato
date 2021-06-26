@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	direction: ltr;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background-color: aliceblue;
+	font-family: Arial, "Helvatica Neue", Helvatica, sans-serif;
+	color:#646464;
+	line-height: 1.5;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+@media only screen and (min-width: 1200px){
+	body{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+	body{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	body{
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 576px){
+	body{
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 575px){
+	body{
+		font-size: 11px;
+	}
+}
+
+#TumSayfa{
+	position: relative;
+	width: 100%;
+	min-width:100%;
+	max-width: 100%;
+	height: : 100%;
+	min-height: 100%;
+	max-height: 100%;
+	margin:0 auto;
+	padding: 0;
+	top: 0;
+	right: 0;
+	bottom:0;
+	left: 0; 
+	border: none;
+	outline: none;
+    overflow: visible;
+}
+
+#HeaderAlani{
+	position: relative;
+	display: block;
+	z-index: 999;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	height: : 100%;
+	min-height: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	top: 0;
+	left: 0;
+	border: none;
+	outline: none;
+
+}
+
+#HMesaj {
+	position: relative;
+	display: block;
+	width: 80%;
+	max-width: 80%;
+	min-width: 80%;
+	height: auto;
+	border:0;
+	outline: 0;
+	top: 5px;
+	left:0;
+	background-color: aliceblue;
+	line-height: 150%;
+	overflow-y: hidden;
+
+}
+
+@media only screen and (min-width: 1200px){
+	#HMesaj{
+		font-size: 40px;
+
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+	#HMesaj{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	#HMesaj{
+		font-size: 27px;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 576px){
+	#HMesaj{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 575px){
+	#HMesaj{
+		font-size: 25px;
+	}
+}
+
+.BargunBaslik{
+	margin-left: 14%;
+	background-color: none;
+	height: auto;
+	display: block;
+	z-index: 3;
+	font-weight: 900;
+	text-decoration: none;
+	position: relative;
+	float: left;
+	color:black;
+	cursor: default;
+}
+
+.BargunBaslik:hover{
+	display: block;
+	color:grey;
+}
+.BargunBaslik:active{
+	color:yellow;
+}
+#CıcekHead {
+	position: relative;
+	margin: 0 auto;
+	width: 30%;
+	max-width: 30%;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	z-index: 0;
+	top:0px;
+	display: block;
+
+}
+
+
+.FullBody{
+	position: relative;
+	width: 100%
+	min-width:100%;
+	max-width: 100%;
+	height: : 100%
+	min-height: 100%;
+	max-height: 100%;
+	margin:0 auto;
+	padding: 0;
+	top: 0;
+	right: 0;
+	bottom:0;
+	left: 0; 
+	border: none;
+	outline: none;
+	color:#FFFF;
+}
+
+@media only screen and (min-width: 1200px){
+	.FullBody{
+		font-size: 28px;
+	}
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+	.FullBody{
+		font-size: 28px;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.FullBody{
+		font-size: 26px;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 576px){
+	.FullBody{
+		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 575px){
+		.FullBody{
+		font-size: 22px;
+	}
+}
+
+.IcBaslik{
+	width: 90%
+	min-width:90%;
+	max-width: 90%;
+	display: block;
+	position: relative;
+	z-index: 0;
+	margin-left: 10%;
+	top:20%;
+
+}
+
+h1{
+	display: block;
+	top:0;
+	left: 0;
+	color:black;
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+#poemaday{
+	text-decoration:none;
+	text-align: left;
+	color: red;
+}
+.Icerik{
+	position: relative;
+	left: 10%;
+	width: 89%;
+	max-width: 89%;
+	height: auto;
+	line-height: 1;
+	display: inline-block;
+}
+
+
+.Icerik_paragraf1{
+	margin-left: 5%;
+	position: relative;
+	display: block;
+	text-align: left;
+	color: black;
+	line-height: inherit;
+}
+.Icerik_paragraf2{
+	position: relative;
+	display: block;
+	text-align: left;
+	color: black;	
+	line-height: inherit;
+}
+.footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	padding: 10px;
+ 	text-align: right;
+ 	position: fixed;
+}
+
+h2{
+	text-align: left;
+	margin-left: 20%;
+}
+
+.footlink{
+	text-decoration-line: none;
+	color: red;
+	font-size: 10px;
+
+}
