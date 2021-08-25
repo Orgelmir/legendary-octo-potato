@@ -4,71 +4,13 @@
 	<meta charset="utf-8">
 	<title>Steps of HUC</title>
 
-<style type="text/css">
-body{
-	position: relative;
-	max-width: 100%;
-	max-height: 100%;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: grey;
-	top: 0;
-	left: 0;
-	float: left;
-}
+<link rel="stylesheet" type="text/css" href="stil.css">
 
-a{
-	text-decoration: none;
-	padding: 20px;
-	margin-left: 10%;
-	display: block;
-	font-size: 20px;
-	top: 25%;
-	float: left;
-}
-a:hover{
-	background-color: black;
-}
-#left_col{
-	position: fixed;
-	max-width: 15%;
-	width: 15%;
-	max-height: 100%;
-	height: 100%;
-	left: 0;
-	display:inline-block;
-	background-color: lightblue;
-	overflow-y: auto;
+	
 
-}
-#main_area{
-	position: relative;
-	max-width: 85%;
-	width: 85%;
-	height: 8%;
-	top: 0;
-	right: 0;
-	left: 15%;
-	display: inline-block;
-	background-color: firebrick;
-	font-size: 20px;
-}
-
-footer{
-	position: fixed;
-	width: 100%;
-	bottom: 0;
-	height: 2.5%;
-	background-color: green;
-	display: block;
-	align-content: right;
-}
-</style>
 </head>
 <body>
-	<div id="left_col">
+	<div id="left_col"><br><br><br><br> 
 		<a href="#">Anasayfa</a>
 		<a href="#">Eğitim Bilgileri</a>
 		<a href="#">Sertifikalar</a>
@@ -76,39 +18,68 @@ footer{
 		<a href="#">İletişim Bilgileri</a>
 	</div>
 	<div id="main_area">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<details><summary>Great</summary>
+			<ol>
+				<li>Hreta</li>
+				<li>Htete</li>
+			</ol>
+		</details>
+		<button onclick="changeD()">CHANGE</button>
+	</div>
+	<div id="container_1">
+	<div id="container_2" style="background-color: black;z-index: 10;height: 100%;width: 95%;position:absolute;"></div>
+	<div id="container_3" style="background-color: blue;z-index: 10;height: 100%;width: 90%;position:absolute;"></div>
+	<div id="container_4" style="background-color: brown;z-index: 10;height: 100%;width: 85%;position:absolute;">
+		<div id="slaytalani" style="z-index: 0;">
+   			<img id="resim" src="slayt1.jpg" width="1000" height="350" style="border:none;" />
+		</div>
+	</div>
 	</div>
 	
+
+	
+<script type="text/javascript" language="javascript">
+var resimsirasi 	=	1;
+var toplamresim 	=	10;
+
+function resimdegistir(deger){
+	var resim		=	document.getElementById("resim");
+	resimsirasi		=	resimsirasi + deger;
+	if(resimsirasi>toplamresim){
+		resimsirasi		=	1;
+	}
+	if(resimsirasi<1){
+		resimsirasi		=	toplamresim;
+	}
+	resim.src 	=	"slayt" + resimsirasi + ".jpg";
+	clearInterval(zaman);
+	zaman		=	window.setInterval(function calistir(){
+		var resim		=	document.getElementById("resim");
+		resimsirasi		=	resimsirasi + 1;
+			if(resimsirasi>toplamresim){
+				resimsirasi		=	1;
+			}
+			if(resimsirasi<1){
+				resimsirasi		=	toplamresim;
+			}
+		resim.src 	=	"slayt" + resimsirasi + ".jpg";
+	}, 3000);
+}
+
+var zaman		=	window.setInterval(function calistir(){
+var resim		=	document.getElementById("resim");
+resimsirasi		=	resimsirasi + 1;
+	if(resimsirasi>toplamresim){
+		resimsirasi		=	1;
+	}
+	if(resimsirasi<1){
+		resimsirasi		=	toplamresim;
+	}
+	resim.src 	=	"slayt" + resimsirasi + ".jpg";
+}	, 3000);
+
+
+</script>	
 </body>
 <footer>asdgdadsgsd</footer>
 </html>
